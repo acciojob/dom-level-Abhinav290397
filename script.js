@@ -2,9 +2,8 @@
 let element = document.getElementById('level');
 let level = 0;
 
-while (element) {
+while (element != null){
   level++;
   element = element.parentNode;
 }
-
 alert(`The level of the element is: ${level}`);
